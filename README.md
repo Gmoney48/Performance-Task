@@ -1,2 +1,39 @@
 # Performance-Task
 AP Computer Science Performance Task
+
+<!-- Quotes -->
+
+Quoteslist = ["Inspirational", "Funny", "Mood_Boosting", "Motivation", "Comforting"]
+
+quotes = {
+    "Inspirational": "Your time is limited, so don't waste it living someone else's life. – Steve Jobs",
+    "Funny": "We are all here on earth to help others; what on earth the others are here for I don't know. - W.H. Auden",
+    "Mood_Boosting": "Smile, breathe and go slowly." — Thich Nhat Hanh",
+    "Motivation": "Believe you can and you're halfway there - Theodore Roosevelt",
+    "Comforting": "Flowers grow back even after the harshest of winters. You will too. — Jennae Cecelia."
+}
+
+quote = input(Do you want to hear a quote? (yes/no) ")
+    if joke == "no":
+        print("Okay whatever floats your boat.")
+    elif joke == "yes":
+        print(Hurray!)
+
+def respondquote(quotetype):
+    if quotetype in jokes:
+        print(quotes[quotetype])
+    else:
+        print(This quote category does not exist!)
+
+def quoteresponse(quotelist):
+    print("quote categories:", quotelist)
+    question = input("Which quote do you want to hear? ")
+    for item in quotelist:
+        if question == item:
+            respondquote(item)
+            quotelist.remove(item)
+            return
+        else:
+            continue
+    else:
+        print("That quote category doesn't exist. Try again!")
