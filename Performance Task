@@ -12,8 +12,8 @@ quotes = {
     "Motivation": "Believe you can and you're halfway there - Theodore Roosevelt",
     "Comforting": "Flowers grow back even after the harshest of winters. You will too. — Jennae Cecelia."
 }
-# Defines jokelist and its options and made a dictionary that contains the punchlines for each joke category 
-# Then when the code runs, it will ask the user if they want to hear a joke and if they say yes it will ask them to choose between a joke category.
+# Defines quotelist and its options and made a dictionary that contains the punchlines for each quote category 
+# Then when the code runs, it will ask the user if they want to hear a quote and if they say yes it will ask them to choose between a quote category.
 
 quote = input("Do you want to hear a quote? (yes/no) ")
 if quote == "no":
@@ -27,7 +27,7 @@ def respondquote(quotetype):
         print(quotes[quotetype])
     else:
         print("This quote category does not exist!")
-# Parameter for jokeresponse is jokelist and the argument is when its called upon in the loop.
+# Parameter for quoteresponse is quotelist and the argument is when its called upon in the loop.
 def quoteresponse(quotelist):
     print("quote categories:", quotelist)
     question = input("Which quote do you want to hear? ")
@@ -40,8 +40,8 @@ def quoteresponse(quotelist):
             continue
     else:
         print("That quote category doesn't exist. Try again!")
-# This function displays the remaining joke categories, asks the user to choose one and it will check if the user's input is still valid.
-# Another joke would have no parameters or arguments since it is asking if the user wants to hear another joke and its waiting for the users input.
+# This function displays the remaining quote categories, asks the user to choose one and it will check if the user's input is still valid.
+# Another quote would have no parameters or arguments since it is asking if the user wants to hear another quote and its waiting for the users input.
 def anotherquote():
     return input("Do you want to hear another quote? (yes/no) ")
 
@@ -57,8 +57,8 @@ while quoteslist: #This loop keeps running until the quotelist is empty
 rate = int(input("Please rate our game 1-10! ")) # This asks to rate the quotes and their experience
 finalscore = rate * 10
 print(f"{finalscore} percent satisfaction rate")
-friend = input("Would you recommend this to a friend? ")
+friend = input("Would you recommend this to a friend?(yes/no): ")
 if friend == "yes":
-    print("Thanks, we appreciate brotato chip.")
+    print("Thanks, we appreciate the feedback.")
 else:
-    print("Sorry, go home.")
+    print("Im sorry to hear that. Have a good day!")
